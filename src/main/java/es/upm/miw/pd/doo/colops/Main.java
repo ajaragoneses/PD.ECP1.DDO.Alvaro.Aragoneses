@@ -16,6 +16,13 @@ public class Main {
         operations.add(new Subtraction(3, 2));
 
         System.out.println("Total_2: " + operations.total());
+        
+        operations.reset();
+        operations.add(new Subtraction(4, 1));
+        operations.add(new Multiplication(3, 6));
+        operations.add(new Subtraction(3, 2));
+
+        System.out.println("Total_3: " + operations.total());
     }
 
 }
