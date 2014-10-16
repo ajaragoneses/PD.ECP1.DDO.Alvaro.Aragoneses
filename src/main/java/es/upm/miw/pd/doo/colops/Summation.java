@@ -1,8 +1,8 @@
 package es.upm.miw.pd.doo.colops;
 
-public class Addition extends Operation{
+public class Summation extends Operation{
 
-	public Addition(int operator1, int operator2) {
+	public Summation(int operator1, int operator2) {
 		super(operator1, operator2);
 		this.simboloOperacion = "+";
 	}
