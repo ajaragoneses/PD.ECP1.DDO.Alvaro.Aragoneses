@@ -39,7 +39,7 @@ public class TestCoche {
 	@Test
 	public void testAlquilerCoche5dias(){
 		assertEquals(46, c1.obtenerPrecioAlquiler(5));
-		assertEquals(67, c2.obtenerPrecioAlquiler(5));
+		assertEquals(69, c2.obtenerPrecioAlquiler(5));
 		assertEquals(92, c3.obtenerPrecioAlquiler(5));
 	}
 	
