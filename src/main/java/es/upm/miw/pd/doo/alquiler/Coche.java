@@ -4,9 +4,9 @@ public class Coche extends Vehiculo {
 
 	private Categoria categoria;
 	
-	public Coche(String descipcion, Categoria categoria){
+	public Coche(String descripcion, Categoria categoria){
 		this.tipoVehiculo = "Coche";
-		this.descripcion = descipcion;
+		this.descripcion = descripcion;
 		this.categoria = categoria;
 	}
 	

@@ -2,14 +2,22 @@ package es.upm.miw.pd.doo.alquiler;
 
 public class Bicicleta extends Vehiculo {
 
-	public Bicicleta(String string) {
-		// TODO Auto-generated constructor stub
-	}
+	public Bicicleta(String descripcion) {
+		this.tipoVehiculo = "Bicicleta";
+		this.descripcion = descripcion;	}
 
 	@Override
 	public int obtenerPrecioAlquiler(int dias) {
-		// TODO Auto-generated method stub
-		return 0;
+		int resultado = 0;
+		for(int i = 1; i <= dias; i++){
+			if(i < 3){
+				resultado += 3;
+			} 
+			else {
+				resultado += 2;
+			}
+		}
+		return resultado;
 	}
 
 }
