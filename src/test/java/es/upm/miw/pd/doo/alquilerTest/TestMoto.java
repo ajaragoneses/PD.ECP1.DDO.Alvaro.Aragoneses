@@ -35,7 +35,7 @@ public class TestMoto {
 	
 	@Test
 	public void testAlquilerMoto14dias(){
-		assertEquals(125, m.obtenerPrecioAlquiler(14));
+		assertEquals(105, m.obtenerPrecioAlquiler(14));
 	}
 
 }

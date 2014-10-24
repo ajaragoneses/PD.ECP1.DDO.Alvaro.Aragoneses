@@ -4,7 +4,8 @@ public class Bicicleta extends Vehiculo {
 
 	public Bicicleta(String descripcion) {
 		this.tipoVehiculo = "Bicicleta";
-		this.descripcion = descripcion;	}
+		this.descripcion = descripcion;	
+		}
 
 	@Override
 	public int obtenerPrecioAlquiler(int dias) {
