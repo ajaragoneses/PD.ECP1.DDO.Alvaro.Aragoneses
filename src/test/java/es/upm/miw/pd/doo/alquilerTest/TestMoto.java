@@ -13,7 +13,7 @@ public class TestMoto {
 	
 	@Before
 	public void init(){
-		this.m = new Moto("Triumph Bonneville");
+		this.m = new Moto("M0001","Triumph Bonneville");
 	}
 	
 	

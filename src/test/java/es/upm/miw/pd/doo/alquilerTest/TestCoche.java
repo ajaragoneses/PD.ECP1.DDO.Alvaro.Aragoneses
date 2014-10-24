@@ -16,9 +16,9 @@ public class TestCoche {
 	
 	@Before
 	public void init(){
-		this.c1 = new Coche("Seat Ibiza", Categoria.A);
-		this.c2 = new Coche("Mazda V6", Categoria.B);
-		this.c3 = new Coche("Lamborghini Diablo", Categoria.C);
+		this.c1 = new Coche("C0001","Seat Ibiza", Categoria.A);
+		this.c2 = new Coche("C0002","Mazda V6", Categoria.B);
+		this.c3 = new Coche("C0003","Lamborghini Diablo", Categoria.C);
 	}
 	
 	

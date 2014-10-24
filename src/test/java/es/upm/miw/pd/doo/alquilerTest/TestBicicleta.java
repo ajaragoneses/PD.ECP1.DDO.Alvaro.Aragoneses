@@ -13,7 +13,7 @@ public class TestBicicleta {
 	
 	@Before
 	public void init(){
-		this.b = new Bicicleta("BMX KHE Evo 0.3");
+		this.b = new Bicicleta("B0001","BMX KHE Evo 0.3");
 	}
 	
 	

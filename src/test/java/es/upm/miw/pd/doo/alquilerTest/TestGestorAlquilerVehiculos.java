@@ -21,9 +21,9 @@ public class TestGestorAlquilerVehiculos {
 	@Before
 	public void init(){
 		this.gav = new GestorAlquilerVehiculos();
-		this.gav.altaVehiculo(new Coche("Citroen Laguna", Categoria.B));
-		this.gav.altaVehiculo(new Moto("Vespino"));
-		this.gav.altaVehiculo(new Bicicleta("Bici de Paseo"));
+		this.gav.altaVehiculo(new Coche("C0001","Citroen Laguna", Categoria.B));
+		this.gav.altaVehiculo(new Moto("M0001","Vespino"));
+		this.gav.altaVehiculo(new Bicicleta("B0001","Bici de Paseo"));
 	}
 	
 	@Test
