@@ -10,27 +10,30 @@ import es.upm.miw.pd.doo.alquiler.Categoria;
 import es.upm.miw.pd.doo.alquiler.Coche;
 import es.upm.miw.pd.doo.alquiler.GestorAlquilerVehiculos;
 import es.upm.miw.pd.doo.alquiler.Moto;
+import es.upm.miw.pd.doo.alquiler.Vehiculo;
 
 public class TestGestorAlquilerVehiculos {
 
 	private GestorAlquilerVehiculos gav;
-	private int vehiculo_1;
-	private int vehiculo_2;
-	private int vehiculo_3;
+	private Vehiculo vehiculo_1;
+	private Vehiculo vehiculo_2;
+	private Vehiculo vehiculo_3;
 	
 	@Before
 	public void init(){
 		this.gav = new GestorAlquilerVehiculos();
-		this.gav.altaVehiculo(new Coche("C0001","Citroen Laguna", Categoria.B));
-		this.gav.altaVehiculo(new Moto("M0001","Vespino"));
-		this.gav.altaVehiculo(new Bicicleta("B0001","Bici de Paseo"));
+		this.vehiculo_1 = new Coche("C0001","Citroen Laguna", Categoria.B);
+		this.vehiculo_2 = new Moto("M0001","Vespino");
+		this.vehiculo_3 = new Bicicleta("B0001","Bici de Paseo");
+		
+		this.gav.altaVehiculo(this.vehiculo_1);
+		this.gav.altaVehiculo(this.vehiculo_2);
+		this.gav.altaVehiculo(this.vehiculo_3);
 	}
 	
 	@Test
 	public void testAltaVehiculos() {
-		assertEquals(0, this.vehiculo_1);
-		assertEquals(1, this.vehiculo_2);
-		assertEquals(2, this.vehiculo_3);
+		assertEquals(3, this.gav.numeroVehiculos());
 	}
 	
 	
@@ -44,7 +47,6 @@ public class TestGestorAlquilerVehiculos {
 		assertEquals(93, this.gav.calcularPrecio("C0001", 7));
 		assertEquals(32, this.gav.calcularPrecio("M0001", 4));
 		assertEquals(30, this.gav.calcularPrecio("B0001", 15));
-
 	}
 
 
