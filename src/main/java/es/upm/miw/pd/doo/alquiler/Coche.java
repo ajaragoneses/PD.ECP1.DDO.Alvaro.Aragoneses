@@ -4,10 +4,11 @@ public class Coche extends Vehiculo {
 
 	private Categoria categoria;
 	
-	public Coche(String descripcion, Categoria categoria){
+	public Coche(String matricula, String descripcion, Categoria categoria){
 		this.tipoVehiculo = "Coche";
 		this.descripcion = descripcion;
 		this.categoria = categoria;
+		this.matricula = matricula;
 	}
 	
 	@Override

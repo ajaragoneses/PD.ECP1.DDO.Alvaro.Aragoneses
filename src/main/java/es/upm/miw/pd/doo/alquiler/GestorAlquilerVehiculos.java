@@ -21,13 +21,9 @@ public class GestorAlquilerVehiculos {
 		return null;
 	}
 	
-	public int calcularPrecio(int idVehiculo, int dias){
+	public int calcularPrecio(String matricula, int dias){
 		// TODO...
 		return 0;
 	}
 	
-	public int getIdVehiculo(Vehiculo v){
-		// TODO...
-		return 0;
-	}
 }

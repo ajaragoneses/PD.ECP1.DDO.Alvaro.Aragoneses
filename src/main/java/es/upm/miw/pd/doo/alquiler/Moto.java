@@ -2,9 +2,10 @@ package es.upm.miw.pd.doo.alquiler;
 
 public class Moto extends Vehiculo {
 
-	public Moto(String descripcion) {
+	public Moto(String matricula, String descripcion) {
 		this.tipoVehiculo = "Moto";
 		this.descripcion = descripcion;	
+		this.matricula = matricula;
 	}
 
 	@Override
