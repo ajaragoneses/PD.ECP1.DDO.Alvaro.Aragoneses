@@ -36,7 +36,7 @@ public class TestGestorAlquilerVehiculos {
 	
 	@Test
 	public void testVerListaVehiculos() {
-		fail("Not yet implemented");
+		assertEquals("[(Coche:Citroen Laguna),(Moto:Vespino),(Bicicleta:Bici de Paseo)]",this.gav.verListaVehiculos());
 	}
 
 	@Test

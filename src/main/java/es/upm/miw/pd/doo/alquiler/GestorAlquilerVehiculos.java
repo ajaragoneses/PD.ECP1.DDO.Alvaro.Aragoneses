@@ -1,24 +1,39 @@
 package es.upm.miw.pd.doo.alquiler;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class GestorAlquilerVehiculos {
 
-	private ArrayList<Vehiculo> listaVehiculos;
+	private Map<String,Vehiculo> listaVehiculos;
 	private int idVehiculo;
 	
 	public GestorAlquilerVehiculos(){
-		this.listaVehiculos = new ArrayList<Vehiculo>();
+		this.listaVehiculos = new LinkedHashMap<String,Vehiculo>();
 		this.idVehiculo = 0;
 	}
 	
 	public void altaVehiculo(Vehiculo v){
-		// TODO...
+		this.listaVehiculos.put(v.getMatricula(), v);
 	}
 	
 	public String verListaVehiculos(){
-		// TODO...
-		return null;
+		String ret = "[";
+		Iterator<Entry<String, Vehiculo>> entries = this.listaVehiculos.entrySet().iterator();
+		while (entries.hasNext()) {
+		  Entry thisEntry = (Entry) entries.next();
+		  String matricula = (String) thisEntry.getKey();
+		  Vehiculo v = (Vehiculo) thisEntry.getValue();
+		  ret += v.toString();
+		  if (entries.hasNext()){
+			  ret += ",";
+		  }
+		}
+		ret += "]";
+		return ret;
 	}
 	
 	public int calcularPrecio(String matricula, int dias){

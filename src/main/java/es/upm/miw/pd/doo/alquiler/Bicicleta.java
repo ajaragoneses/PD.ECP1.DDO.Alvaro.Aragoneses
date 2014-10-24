@@ -2,7 +2,7 @@ package es.upm.miw.pd.doo.alquiler;
 
 public class Bicicleta extends Vehiculo {
 
-	public Bicicleta(String matricul, String descripcion) {
+	public Bicicleta(String matricula, String descripcion) {
 		this.tipoVehiculo = "Bicicleta";
 		this.descripcion = descripcion;
 		this.matricula = matricula;
