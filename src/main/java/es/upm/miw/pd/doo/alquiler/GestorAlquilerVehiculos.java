@@ -11,6 +11,10 @@ public class GestorAlquilerVehiculos {
 	private Map<String,Vehiculo> listaVehiculos;
 	private int idVehiculo;
 	
+	public int numeroVehiculos(){
+		return this.listaVehiculos.size();
+	}
+	
 	public GestorAlquilerVehiculos(){
 		this.listaVehiculos = new LinkedHashMap<String,Vehiculo>();
 		this.idVehiculo = 0;
@@ -37,8 +41,11 @@ public class GestorAlquilerVehiculos {
 	}
 	
 	public int calcularPrecio(String matricula, int dias){
-		// TODO...
-		return 0;
+		Vehiculo v = this.listaVehiculos.get(matricula);
+		if (v == null){
+			return 0;
+		}
+		return v.obtenerPrecioAlquiler(dias);
 	}
 	
 }
