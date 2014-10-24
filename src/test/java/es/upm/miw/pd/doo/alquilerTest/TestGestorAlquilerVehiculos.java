@@ -41,7 +41,10 @@ public class TestGestorAlquilerVehiculos {
 
 	@Test
 	public void testCalcularPrecio() {
-		fail("Not yet implemented");
+		assertEquals(93, this.gav.calcularPrecio("C0001", 7));
+		assertEquals(32, this.gav.calcularPrecio("M0001", 4));
+		assertEquals(30, this.gav.calcularPrecio("B0001", 15));
+
 	}
 
 
